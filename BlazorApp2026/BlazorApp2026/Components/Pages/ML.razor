@@ -1,0 +1,28 @@
+﻿@page "/ML"
+@inject MLService MLService
+@rendermode InteractiveServer
+
+
+<h3>Sales Prediction</h3>
+<br />
+<br />
+<h3>Please enter month number to predict</h3>
+<br />
+<br />
+<input type="number" min="1" max="12" @bind="inputMonth"/>
+
+<button @onclick="Predict">Predict</button>
+<span>Prediction: @prediction</span>
+
+@code {
+	float inputMonth = 1;
+	float prediction = 0;
+
+	async Task Predict()
+	{
+		prediction = MLService.Predict(inputMonth);
+		System.Diagnostics.Debug.WriteLine($"Prediction result: {prediction}");
+		StateHasChanged();
+	}
+
+}

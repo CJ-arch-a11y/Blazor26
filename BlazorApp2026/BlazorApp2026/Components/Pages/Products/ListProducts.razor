@@ -23,19 +23,10 @@
         <SfGrid DataSource="@listOfProducts" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
 
             <GridColumns>
-                <GridColumn HeaderText="Book" TextAlign="TextAlign.Center" Width="120">
-                    <Template Context="prod">
-                        @{
-                            var product = prod as Product;
-                        }
-
-                        <img src="@product.Image" style="width:100px; height:100px; " />
-                    </Template>
-                </GridColumn>
                 <GridColumn Field=@nameof(Product.ID) HeaderText="ID" TextAlign="TextAlign.Left" Width="50"></GridColumn>
-                <GridColumn Field=@nameof(Product.Name) HeaderText="Title" TextAlign="TextAlign.Left" Width="120"></GridColumn>
+                <GridColumn Field=@nameof(Product.Name) HeaderText="Name" TextAlign="TextAlign.Left" Width="120"></GridColumn>
                 <GridColumn Field=@nameof(Product.Price) HeaderText="Price" Format="C2" TextAlign="TextAlign.Left" Width="100"></GridColumn>
-                <GridColumn Field=@nameof(Product.CategoryID) HeaderText="GenreID" TextAlign="TextAlign.Left" Width="120"></GridColumn>
+                <GridColumn Field=@nameof(Product.CategoryID) HeaderText="CategoryID" TextAlign="TextAlign.Left" Width="120"></GridColumn>
 
                 <GridColumn Width="200">
                     <Template Context="prod">

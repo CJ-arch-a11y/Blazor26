@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blazor26.DataAccess.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20260415161843_salesData")]
+    [Migration("20260415194954_salesData")]
     partial class salesData
     {
         /// <inheritdoc />

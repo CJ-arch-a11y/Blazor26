@@ -1,5 +1,7 @@
+using System.Threading.Tasks;
 using Blazor26.DataAccess.DataAccess;
 using Blazor26.Services;
+using Blazor26.Services.BusinessModels;
 using BlazorApp2026.Components;
 
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +11,7 @@ namespace BlazorApp2026
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1JHaF5cWWdCekx0QHxbf1x2ZF1MYFpbRnNPIiBoS35RcEVgW3lccHRdRGdUWE1zVEFe");
 
@@ -17,6 +19,7 @@ namespace BlazorApp2026
 
             // Add services to the container.
             builder.Services.AddSyncfusionBlazor();
+            builder.Services.AddSingleton<MLService>();
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents()
                 .AddInteractiveWebAssemblyComponents();
@@ -24,6 +27,33 @@ namespace BlazorApp2026
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IFileMgt, FileMgt>();
             var app = builder.Build();
+
+            
+            using (var scope = app.Services.CreateScope())
+            {
+                var mlService = scope.ServiceProvider.GetRequiredService<MLService>();
+                var unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
+
+                var sales = await unitOfWork.SalesRepo.ListofSalesDataAsync();
+
+                if (sales.Any())
+                {
+                    var data = sales.Select(s => new SalesData
+                    {
+                        Month = s.MonthName.Month,
+                        SalesAmount = (float)s.SalesAmount
+                    }).ToList();
+
+                    mlService.Train(data);
+                    Console.WriteLine("Model trained at startup");
+                }
+                else
+                {
+                    Console.WriteLine("No data available for training");
+                }
+            }
+
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

@@ -5009,9 +5009,9 @@ C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\
 C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\9djekw9zl2-tptq2av103.gz
 C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\gx48as1676-lfu7j35m59.gz
 C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\qbebn40hjm-oyz0vx2fzb.gz
-C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\qk3hijsyr0-qibj0z3uy7.gz
-C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\owswjrfdrn-3s5l81tt2k.gz
-C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\0hi1v0nysa-xq4yo0njpw.gz
+C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\qk3hijsyr0-g9x9yl4xcn.gz
+C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\owswjrfdrn-oxpla02zr6.gz
+C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\compressed\0hi1v0nysa-knwqqbpmwr.gz
 C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\L00171169\Blazor26\BlazorApp2026\BlazorApp2026.Client\obj\Debug\net8.0\staticwebassets.development.json
