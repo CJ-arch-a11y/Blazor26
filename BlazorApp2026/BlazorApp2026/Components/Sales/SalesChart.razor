@@ -1,0 +1,33 @@
+﻿@page "/sales"
+@using Blazor26.Models.Models
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Charts
+@inject IUnitOfWork _unitOfWork
+@rendermode InteractiveServer
+
+<SfChart Title="Monthly Sales">
+    <ChartPrimaryXAxis  Title="Month" ValueType="Syncfusion.Blazor.Charts.ValueType.Category"></ChartPrimaryXAxis> 
+    <ChartPrimaryYAxis Title="Amount Sold"></ChartPrimaryYAxis>
+     <ChartLegendSettings Visible="true"></ChartLegendSettings>
+     <ChartSeriesCollection> 
+        <ChartSeries DataSource="@listOfSales" XName="MonthName" YName="SalesAmount" Type="ChartSeriesType.Column"> </ChartSeries> 
+    </ChartSeriesCollection> 
+</SfChart>
+
+@code {
+    private IEnumerable<Sales> listOfSales { get; set; } = new List<Sales>();
+    private bool isLoading { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(LoadSales);
+
+    }
+
+    private void LoadSales()
+    {
+        listOfSales = _unitOfWork.SalesRepo.GetAll();
+        isLoading = false;
+    }
+
+}

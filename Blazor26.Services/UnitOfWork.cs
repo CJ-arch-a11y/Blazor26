@@ -14,13 +14,15 @@ namespace Blazor26.Services
         private readonly AppDBContext _dbContext;
         public ICategoryRepo CategoryRepo { get; private set; }
         public IProductRepo ProductRepo { get; private set; }
-        
+        public ISalesRepo SalesRepo { get; private set; }
+
         public UnitOfWork(AppDBContext appDBContext)
         {
             _dbContext = appDBContext;
             CategoryRepo = new CategoryRepo(_dbContext);
             ProductRepo = new ProductRepo(_dbContext);
-            
+            SalesRepo = new SalesRepo(_dbContext);
+
         }
         
 

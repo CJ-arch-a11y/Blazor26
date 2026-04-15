@@ -1,6 +1,9 @@
 ﻿@page "/products"
 @using Blazor26.Models.Models
+@using Syncfusion.Blazor
+@using Syncfusion.Blazor.Grids
 @inject IUnitOfWork _unitOfWork
+@rendermode InteractiveServer
 
 <div class="row mt-4">
     <div class="col-6">
@@ -17,33 +20,36 @@
 <div class="col-12 p-3">
     @if (listOfProducts.Any())
     {
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach(var prod in listOfProducts)
-                {
-                    <tr>
-                        <td>
-                            @prod.Name
-                        </td>
-                        <td>
-                            <NavLink href="@($"products/edit/{prod.ID}")" class="btn btn-primary">Edit</NavLink>
+        <SfGrid DataSource="@listOfProducts" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
 
-                        </td>
-                        <td>
-                            <NavLink href="@($"products/delete/{prod.ID}")" class="btn btn-primary">Delete</NavLink>
-                        </td>
+            <GridColumns>
+                <GridColumn HeaderText="Book" TextAlign="TextAlign.Center" Width="120">
+                    <Template Context="prod">
+                        @{
+                            var product = prod as Product;
+                        }
 
-                      
-                    </tr>
-                }
-            </tbody>
-        </table>
+                        <img src="@product.Image" style="width:100px; height:100px; " />
+                    </Template>
+                </GridColumn>
+                <GridColumn Field=@nameof(Product.ID) HeaderText="ID" TextAlign="TextAlign.Left" Width="50"></GridColumn>
+                <GridColumn Field=@nameof(Product.Name) HeaderText="Title" TextAlign="TextAlign.Left" Width="120"></GridColumn>
+                <GridColumn Field=@nameof(Product.Price) HeaderText="Price" Format="C2" TextAlign="TextAlign.Left" Width="100"></GridColumn>
+                <GridColumn Field=@nameof(Product.CategoryID) HeaderText="GenreID" TextAlign="TextAlign.Left" Width="120"></GridColumn>
+
+                <GridColumn Width="200">
+                    <Template Context="prod">
+                        @{
+                            var product = prod as Product;
+                        }
+
+                        <NavLink href="@($"products/edit/{product.ID}")" class="btn btn-primary">Edit</NavLink>
+                        <NavLink href="@($"products/delete/{product.ID}")" class="btn btn-primary">Delete</NavLink>
+
+                    </Template>
+                </GridColumn>
+            </GridColumns>
+        </SfGrid>
     }
     else
     {
@@ -57,18 +63,18 @@
         {
             <p class="text-danger">No Products found</p>
         }
-      
+
     }
 </div>
 
-@code{
+@code {
     private IEnumerable<Product> listOfProducts { get; set; } = new List<Product>();
     private bool isLoading { get; set; } = true;
 
     protected override async Task OnInitializedAsync()
     {
         await Task.Run(LoadProducts);
-       
+
     }
 
     private void LoadProducts()

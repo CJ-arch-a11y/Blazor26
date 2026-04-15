@@ -3,6 +3,7 @@ using Blazor26.Services;
 using BlazorApp2026.Components;
 
 using Microsoft.EntityFrameworkCore;
+using Syncfusion.Blazor;
 
 namespace BlazorApp2026
 {
@@ -10,9 +11,12 @@ namespace BlazorApp2026
     {
         public static void Main(string[] args)
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1JHaF5cWWdCekx0QHxbf1x2ZF1MYFpbRnNPIiBoS35RcEVgW3lccHRdRGdUWE1zVEFe");
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddSyncfusionBlazor();
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents()
                 .AddInteractiveWebAssemblyComponents();
