@@ -32,26 +32,6 @@ C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\Asp.net 2024\Blazor26\Blazor26.Se
 C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\Asp.net 2024\Blazor26\Blazor26.Services\obj\Debug\net8.0\refint\Blazor26.Services.dll
 C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\Asp.net 2024\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.pdb
 C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\Asp.net 2024\Blazor26\Blazor26.Services\obj\Debug\net8.0\ref\Blazor26.Services.dll
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.deps.json
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.runtimeconfig.json
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.dll
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.pdb
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.DataAccess.dll
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Models.dll
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.DataAccess.pdb
-C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Models.pdb
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.csproj.AssemblyReference.cache
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.AssemblyInfoInputs.cache
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.AssemblyInfo.cs
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.csproj.CoreCompileInputs.cache
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.sourcelink.json
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.66C49218.Up2Date
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.dll
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\refint\Blazor26.Services.dll
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.pdb
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.genruntimeconfig.cache
-C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\ref\Blazor26.Services.dll
 C:\Users\L00171169\OneDrive - Atlantic TU\Applied Computing\Year 3\ASP.Net Development\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.deps.json
 C:\Users\L00171169\OneDrive - Atlantic TU\Applied Computing\Year 3\ASP.Net Development\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.runtimeconfig.json
 C:\Users\L00171169\OneDrive - Atlantic TU\Applied Computing\Year 3\ASP.Net Development\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.dll
@@ -72,3 +52,23 @@ C:\Users\L00171169\OneDrive - Atlantic TU\Applied Computing\Year 3\ASP.Net Devel
 C:\Users\L00171169\OneDrive - Atlantic TU\Applied Computing\Year 3\ASP.Net Development\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.pdb
 C:\Users\L00171169\OneDrive - Atlantic TU\Applied Computing\Year 3\ASP.Net Development\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.genruntimeconfig.cache
 C:\Users\L00171169\OneDrive - Atlantic TU\Applied Computing\Year 3\ASP.Net Development\Blazor26\Blazor26.Services\obj\Debug\net8.0\ref\Blazor26.Services.dll
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.deps.json
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.runtimeconfig.json
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.dll
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.pdb
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.DataAccess.dll
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Models.dll
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.DataAccess.pdb
+C:\Users\L00171169\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Models.pdb
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.csproj.AssemblyReference.cache
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.AssemblyInfoInputs.cache
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.AssemblyInfo.cs
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.csproj.CoreCompileInputs.cache
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.sourcelink.json
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.66C49218.Up2Date
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.dll
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\refint\Blazor26.Services.dll
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.pdb
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.genruntimeconfig.cache
+C:\Users\L00171169\Blazor26\Blazor26.Services\obj\Debug\net8.0\ref\Blazor26.Services.dll

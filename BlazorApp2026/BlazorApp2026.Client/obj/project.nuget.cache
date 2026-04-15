@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oltxqW2i6+M=",
+  "dgSpecHash": "iQZUrpM2YDg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\L00171169\\OneDrive - Atlantic TU\\Applied Computing\\Year 3\\ASP.Net Development\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\BlazorApp2026.Client.csproj",
+  "projectFilePath": "C:\\Users\\L00171169\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\BlazorApp2026.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L00171169\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\L00171169\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.2\\microsoft.aspnetcore.authorization.8.0.2.nupkg.sha512",
