@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KkAtUTNJ6w4=",
+  "dgSpecHash": "3ze8DsfE/tw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\L00171169\\Blazor26\\Blazor26.Models\\Blazor26.Models.csproj",
+  "projectFilePath": "C:\\Users\\L00171169\\OneDrive - Atlantic TU\\Applied Computing\\Year 3\\ASP.Net Development\\Blazor26\\Blazor26.Models\\Blazor26.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L00171169\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\L00171169\\.nuget\\packages\\microsoft.aspnetcore.hosting.windowsservices\\8.0.25\\microsoft.aspnetcore.hosting.windowsservices.8.0.25.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cJOtdCICxRQ=",
+  "dgSpecHash": "LlU1PS14HxE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\L00171169\\Blazor26\\BlazorApp2026\\BlazorApp2026\\BlazorApp2026.csproj",
+  "projectFilePath": "C:\\Users\\L00171169\\OneDrive - Atlantic TU\\Applied Computing\\Year 3\\ASP.Net Development\\Blazor26\\BlazorApp2026\\BlazorApp2026\\BlazorApp2026.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L00171169\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\L00171169\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
