@@ -11,39 +11,61 @@ namespace Blazor26.DataAccess.DataAccess
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
-        
         public DbSet<Sales> Sales { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Category>()
-                .HasData(
-                new Category { Id = 1, Name = "Mystery" },
-                new Category { Id = 2, Name = "Thriller" });
+            modelBuilder.Entity<Category>().HasData(
+                new Category { Id = 1, Name = "Desktops" },
+                new Category { Id = 2, Name = "Printers" },
+                new Category { Id = 3, Name = "Display Tables" }
+            );
 
             modelBuilder.Entity<Product>()
-                .HasData(
-                new Product { ID = 1, Name = "Hamnet", Image = @"\Images\Products\Book2.webp", Price = 10, description = "Hamnet tells the story of a boy whose life has been all but forgotten, but whose name was given to one of the most celebrated plays ever written. It is also the story of a marriage, of a couple brought together by love and curiosity, and pulled apart by grief. Inspired by the son Shakespeare lost, Maggie O’Farrell’s breathtaking novel is a luminous portrait of a family and a tender exploration of how art can emerge from sorrow.", CategoryID = 1 },
-                new Product { ID = 2, Name = "In Glass Houses", Image = @"\Images\Products\Book1.jpg", Price = 12, description = "When everyone is looking in, a killer can only hide in plain sight Eddie has always known that the wrong man was made the scapegoat for Juliet's murder. So when a new luxury sky-rise is opened by Juliet's father, just metres from where her body was discovered two decades before, Eddie can't resist finding her way in, back into a world where dangerous people operate in the shadows, and anyone might kill to keep a secret safe.", CategoryID = 2 });
+                .Property(p => p.ID)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<Product>().HasData(
+                new Product { ID = 1, Name = "HP PRo", CategoryID = 1, description = "Big desktop PC", Price = 892.99f },
+                new Product { ID = 2, Name = "Dell X100", CategoryID = 1, description = "Not a laptop", Price = 140.99f },
+                new Product { ID = 3, Name = "HP 450x", CategoryID = 2, description = "bad colour printer", Price = 1200.99f },
+                new Product { ID = 4, Name = "HP Meezie", CategoryID = 2, description = "Good colour printer", Price = 12500.99f },
+                new Product { ID = 5, Name = "Gala Table", CategoryID = 3, description = "Very Big Table", Price = 12123.99f },
+                new Product { ID = 6, Name = "DreamTop", CategoryID = 3, description = "Big Table", Price = 900.99f }
+
+            );
 
             modelBuilder.Entity<Sales>()
-                .HasData(
-                new Sales { Id = 1, MonthName = "Jan", SalesAmount = 53, ProductID = 1 },
-                new Sales { Id = 2, MonthName = "Feb", SalesAmount = 29, ProductID = 1 },
-                new Sales { Id = 3, MonthName = "Mar", SalesAmount = 92, ProductID = 1 },
-                new Sales { Id = 4, MonthName = "Apr", SalesAmount = 79, ProductID = 1 },
-                new Sales { Id = 5, MonthName = "May", SalesAmount = 63, ProductID = 1 },
-                new Sales { Id = 6, MonthName = "Jun", SalesAmount = 32, ProductID = 1 },
-                new Sales { Id = 7, MonthName = "Jul", SalesAmount = 5, ProductID = 1 },
-                new Sales { Id = 8, MonthName = "Aug", SalesAmount = 89, ProductID = 1 },
-                new Sales { Id = 9, MonthName = "Sep", SalesAmount = 29, ProductID = 1 },
-                new Sales { Id = 10, MonthName = "Oct", SalesAmount = 41, ProductID = 1 },
-                new Sales { Id = 11, MonthName = "Nov", SalesAmount = 84, ProductID = 1 },
-                new Sales { Id = 12, MonthName = "Dec", SalesAmount = 46, ProductID = 1 });
+                .Property(s => s.Id)
+                .ValueGeneratedNever();
 
+            var salesData = new List<Sales>();
+            int id = 1;
+
+            var startDate = new DateTime(2024, 1, 1);
+
+            for (int productId = 1; productId <= 6; productId++)
+            {
+                decimal baseSales = 1000 + (productId * 200);
+
+                for (int i = 0; i < 12; i++)
+                {
+                    var date = startDate.AddMonths(i);
+
+                    salesData.Add(new Sales
+                    {
+                        Id = id++,
+                        ProductID = productId,
+                        MonthName = date,
+                        SalesAmount = baseSales + (i * 100)
+                    });
+                }
+            }
+
+            modelBuilder.Entity<Sales>().HasData(salesData);
+        
 
         }
-
     }
 }

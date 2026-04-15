@@ -4804,11 +4804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\L00171169\\OneDrive - Atlantic TU\\Applied Computing\\Year 3\\ASP.Net Development\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\BlazorApp2026.Client.csproj",
+      "projectUniqueName": "C:\\Users\\L00171169\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\BlazorApp2026.Client.csproj",
       "projectName": "BlazorApp2026.Client",
-      "projectPath": "C:\\Users\\L00171169\\OneDrive - Atlantic TU\\Applied Computing\\Year 3\\ASP.Net Development\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\BlazorApp2026.Client.csproj",
+      "projectPath": "C:\\Users\\L00171169\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\BlazorApp2026.Client.csproj",
       "packagesPath": "C:\\Users\\L00171169\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\L00171169\\OneDrive - Atlantic TU\\Applied Computing\\Year 3\\ASP.Net Development\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\obj\\",
+      "outputPath": "C:\\Users\\L00171169\\Blazor26\\BlazorApp2026\\BlazorApp2026.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -9,6 +9,6 @@ namespace Blazor26.DataAccess.Repository
 {
     public interface ISalesRepo : IRepository<Sales>
     {
-
+        Task<List<Sales>> ListofSalesDataAsync();
     }
 }

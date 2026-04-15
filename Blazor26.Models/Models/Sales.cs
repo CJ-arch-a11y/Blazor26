@@ -10,7 +10,7 @@ namespace Blazor26.Models.Models
     public class Sales
     {
         public int Id { get; set; }
-        public string MonthName { get; set; } = string.Empty;
+        public DateTime MonthName { get; set; }
         public decimal SalesAmount { get; set; }
         public int ProductID { get; set; }
 
